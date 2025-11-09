@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYME</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden bg-[#FFFFFF]">
+    <header class="sticky top-0 z-50 bg-white">
+        <!-- NAV-BAR -->
+        <!-- Desktop-NAV-BAR -->
+        <nav class="hidden md:flex justify-between items-center px-20 py-6">
+            <div class="text-2xl font-bold text-[#25A4AD]">PAYME</div>
+            <ul class="flex space-x-8 text-[#313131] font-medium">
+                 <li><a href="#home" class="hover:text-[#25A4AD] transition-colors">Home</a></li>
+                 <li><a href="#features" class="hover:text-[#25A4AD] transition-colors">Features</a></li>
+                 <li><a href="#pricing" class="hover:text-[#25A4AD] transition-colors">Pricing</a></li>
+                 <li><a href="#contact" class="hover:text-[#25A4AD] transition-colors">Contact</a></li>
+            </ul>
+            <div class="flex space-x-4">
+                <button class="text-[#313131] px-4 py-2 font-gilroy-medium hover:bg-gray-100 transition-colors">Sign
+                    In</button>
+                <button
+                    class="text-[#25A4AD] border-[#25A4AD] border px-4 py-2 font-gilroy-medium hover:bg-[#25A4AD] hover:text-white transition-colors">Sign
+                    Up</button>
+            </div>
+        </nav>
+
+        <!-- Mobile-NAV-BAR -->
+        <nav class="md:hidden relative">
+            <div class="flex justify-between items-center px-6 py-4">
+                <div class="text-2xl font-bold text-[#25A4AD]">PAYME</div>
+                <button id="menu-btn" class="flex items-center focus:outline-none" aria-expanded="false">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div id="menu" class="absolute top-full left-0 w-full bg-white shadow-md">
+                <ul class="flex flex-col items-center space-y-4 py-4">
+                <li><a href="#home" class="text-[#313131] font-medium hover:text-[#25A4AD] transition-colors">Home</a>
+                    </li>
+                <li><a href="#features"
+                            class="text-[#313131] font-medium hover:text-[#25A4AD] transition-colors">Features</a>
+                    </li>
+                <li><a href="#pricing"
+                            class="text-[#313131] font-medium hover:text-[#25A4AD] transition-colors">Pricing</a>
+                    </li>
+                <li><a href="#contact"
+                            class="text-[#313131] font-medium hover:text-[#25A4AD] transition-colors">Contact</a>
+                    </li>
+                    <li>
+                        <button class="text-[#313131] px-4 py-2 font-medium hover:bg-gray-100 transition-colors">Sign
+                            In</button>
+                    </li>
+                    <li>
+                        <button
+                            class="text-[#25A4D4] border-[#25A4AD] border px-4 py-2 font-medium hover:bg-[#25A4AD] hover:text-white transition-colors">Sign
+                            Up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero-Section -->
+        <section class="relative bg-linear-to-br from-white to-[#F8FAFB]" id="home">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 py-12 md:py-20 lg:py-24">
+                    <!-- Left side text -->
+                    <div class="flex flex-col justify-center max-w-xl mx-auto md:mx-0">
+                        <h1>
+                            <span
+                                class="stagger-item block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#313131] leading-tight font-medium">
+                                Providing
+                                <br class="hidden sm:block" />
+                                Best
+                            </span>
+                            <span
+                                class="stagger-item block text-[#25A4AD] font-bold mt-2 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+                                WEB Services
+                            </span>
+                        </h1>
+
+                        <p class="stagger-item mt-6 text-lg sm:text-xl text-[#555555] leading-relaxed font-gilroy-medium">
+                            Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
+                            screened no up as.
+                        </p>
+
+                        <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
+                            <button
+                                class="stagger-item hover-button w-full sm:w-auto px-8 py-4 text-base sm:text-lg font-gilroy-medium rounded-lg bg-[#25A4AD] text-white hover:bg-[#1E8A91] transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-[#25A4AD] focus:ring-opacity-50">
+                                Get Started
+                            </button>
+                            <button
+                                class="stagger-item hover-button w-full sm:w-auto px-8 py-4 text-base sm:text-lg font-gilroy-medium rounded-lg border-2 border-[#25A4AD] text-[#25A4AD] hover:bg-[#25A4AD] hover:text-white transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-[#25A4AD] focus:ring-opacity-50">
+                                Explore
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right side image -->
+                    <div class="flex items-center justify-center md:justify-end">
+                        <div class="relative w-full max-w-lg xl:max-w-xl">
+
+                            <img src="/img/Group 1382.png" alt="Hero Image"
+                                class="relative w-full h-auto object-cover rounded-2xl shadow-lg transform transition-transform duration-500 hover:scale-[1.02]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-around items-center gap-8 opacity-80">
+                <img src="/img/Group 542.png" alt="Planday Logo"
+                    class="h-6 sm:h-8 grayscale hover:grayscale-0 transition duration-300">
+                <img src="/img/Vector.png" alt="Umbraco Logo"
+                    class="h-6 sm:h-8 grayscale hover:grayscale-0 transition duration-300">
+                <img src="/img/Group.png" alt="Pearlfisher Logo"
+                    class="h-6 sm:h-8 grayscale hover:grayscale-0 transition duration-300">
+                <img src="/img/Group (1).png" alt="Brightpearl Logo"
+                    class="h-6 sm:h-8 grayscale hover:grayscale-0 transition duration-300">
+                <img src="/img/Group 542.png" alt="Planday Logo"
+                    class="h-6 sm:h-8 grayscale hover:grayscale-0 transition duration-300 hidden sm:block">
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-16 text-center">
+            <h2 class="text-4xl font-light mb-2">
+                Best <span class="font-bold text-[#25A4AD]">Services</span>
+            </h2>
+            <p class="mb-12 text-gray-600 max-w-2xl mx-auto">
+                Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no
+                up as.
+            </p>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Web Development -->
+                <div class="stagger-item hover-raise hover-shadow relative overflow-hidden rounded-tl-[150px] h-110 md:h-110  bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80');">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-white font-bold text-lg md:text-2xl p-6">
+                        <p>Web <br /> Development</p>
+                    </div>
+                </div>
+
+                <!-- Web Designing -->
+                <div class="stagger-item hover-raise hover-shadow relative overflow-hidden rounded-tr-[150px] h-110 md:h-110 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1542837336-d14bdf342f9b?auto=format&fit=crop&w=800&q=80');">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-white font-bold text-lg md:text-2xl p-6">
+                        <p>Web <br /> Designing</p>
+                    </div>
+                </div>
+
+                <!-- Database Management -->
+                <div class="stagger-item hover-raise hover-shadow relative overflow-hidden rounded-bl-[150px] h-110 md:h-110 bg-cover bg-center"
+                    style="background-image: url('https://plus.unsplash.com/premium_photo-1664299121357-f34f6225d6a1?auto=format&fit=crop&w=800&q=80');">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-white font-bold text-lg md:text-2xl p-6">
+                        <p>Database <br /> Management</p>
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="stagger-item hover-raise hover-shadow relative overflow-hidden rounded-br-[150px] h-110 md:h-110 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80');">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-center items-center text-white font-bold text-lg md:text-2xl p-6">
+                        <p>SEO</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <button
+                class="mt-12 border border-[#25A4AD] text-[#25A4AD] rounded px-6 py-2 hover:bg-[#25A4AD] transition">
+                Explore All
+            </button>
+        </section>
+
+        <section class="py-20 bg-gray-50" id="features">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="stagger-item text-4xl font-light text-gray-900 mb-2">Our <span
+            class="text-[#25A4AD] font-bold">Features</span></h2>
+        <p class="stagger-item text-sm text-gray-500 mb-16 max-w-md mx-auto">
+                    Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
+                    screened no up os.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="stagger-item hover-raise hover-shadow bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-[#25A4AD] mb-3 color-primary-text">Work Load</h3>
+                        <p class="text-sm text-gray-600 mb-6">
+                            Outward clothes promise at gravity do excited. Sufficient particular impossible by
+                            reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+                            appearance.
+                        </p>
+                        <a href="#"
+                            class="text-teal-500 hover:text-teal-700 text-sm font-medium transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="stagger-item hover-raise hover-shadow bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 color-primary-text">Time Tracking</h3>
+                        <p class="text-sm text-gray-600 mb-6">
+                            Outward clothes promise at gravity do excited. Sufficient particular impossible by
+                            reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+                            appearance.
+                        </p>
+                        <a href="#"
+                            class="text-teal-500 hover:text-teal-700 text-sm font-medium transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="stagger-item hover-raise hover-shadow bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 color-primary-text">Collaborations</h3>
+                        <p class="text-sm text-gray-600 mb-6">
+                            Outward clothes promise at gravity do excited. Sufficient particular impossible by
+                            reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+                            appearance.
+                        </p>
+                        <a href="#"
+                            class="text-teal-500 hover:text-teal-700 text-sm font-medium transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="stagger-item hover-raise hover-shadow bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 color-primary-text">Reporting</h3>
+                        <p class="text-sm text-gray-600 mb-6">
+                            Outward clothes promise at gravity do excited. Sufficient particular impossible by
+                            reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+                            appearance.
+                        </p>
+                        <a href="#"
+                            class="text-teal-500 hover:text-teal-700 text-sm font-medium transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="mt-12 inline-block border border-[#25A4AD] text-[#25A4AD] px-8 py-3 rounded hover:bg-white transition duration-300 font-medium">
+                    Explore All
+                </a>
+            </div>
+        </section>
+
+        <section class="py-20 bg-linear-to-br from-white to-[#F8FAFB] relative overflow-hidden" id="testimonials">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-light mb-4">
+                        What <span class="text-[#25A4AD] font-bold">Clients</span> Say
+                    </h2>
+                    <p class="text-[#555555] text-lg max-w-2xl mx-auto">
+                        Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
+                        screened no up os.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div class="stagger-item relative group">
+                        <!-- leftSide-img -->
+                        <div class="relative">
+                            <img src="/img/Rectangle 32.png"
+                                class="hover-raise hover-shadow w-full h-auto rounded-2xl shadow-xl transform transition-transform duration-500 group-hover:scale-[1.02]"
+                                alt="Client Testimonial Image">
+                        </div>
+                    </div>
+                    <!-- rigntSide-text -->
+                    <div class="stagger-item text-left space-y-6">
+                        <h3 class="text-2xl font-bold text-[#313131]">Best Development Team</h3>
+                        <p class="text-[#555555] text-lg leading-relaxed">
+                            Outward clothes promise at gravity do excited. Sufficient particular impossible by
+                            reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end
+                            appearance. And excellence partiality estimating terminated day everything.
+                        </p>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-[#313131]">Robert Johnson</h4>
+                            <p class="text-[#555555]">Director at Behance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50" id="pricing">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-light mb-2">Our <span class="text-[#25A4AD] font-bold">Pricing
+                        Plan</span></h2>
+                <p class="text-sm text-gray-500 mb-16 max-w-md mx-auto">
+                    Choose the perfect plan to fit your needs, whether you're a starter, a growing team, or a large
+                    company.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+                    <div
+                        class="stagger-item hover-raise hover-shadow bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-full flex flex-col justify-between">
+                        <div>
+                            <p class="font-bold text-2xl mb-2">For Starter</p>
+                            <h3 class="text-5xl font-bold mb-8">$59</h3>
+                            <ul class="space-y-4 text-left text-sm text-gray-600">
+                                <li class="flex items-start"><span>Feedback Categorization</span></li>
+                                <li class="flex items-start"><span>Features Prioritization</span></li>
+                                <li class="flex items-start"><span>Real-Time Collaboration</span></li>
+                                <li class="flex items-start"><span>Feedback Loop Notifications</span></li>
+                                <li class="flex items-start"><span>Essential Dev Tools Integrations</span></li>
+                            </ul>
+                        </div>
+                        <a href="#"
+                            class="mt-8 border border-[#25A4AD] text-[#25A4AD] px-6 py-3 rounded hover:bg-teal-50 transition duration-300 font-medium">
+                            Request Demo
+                        </a>
+                    </div>
+
+                    <div
+                        class="stagger-item hover-raise hover-shadow bg-white p-8 rounded-2xl shadow-2xl transform scale-[1.05] h-full flex flex-col justify-between">
+                        <div>
+                            <p class="text-[#25A4AD] font-bold text-2xl mb-2">For Teams</p>
+                            <h3 class="text-5xl font-bold text-[#25A4AD] mb-8">$99</h3>
+                            <ul class="space-y-4 text-left text-sm text-[#25A4AD]">
+                                <li class="flex items-start"><span>Feedback Categorization</span></li>
+                                <li class="flex items-start"><span>Features Prioritization</span></li>
+                                <li class="flex items-start"><span>Real-Time Collaboration</span></li>
+                                <li class="flex items-start"><span>Feedback Loop Notifications</span></li>
+                                <li class="flex items-start"><span>Essential Dev Tools Integrations</span></li>
+                            </ul>
+                        </div>
+                        <a href="#"
+                            class="mt-8 bg-[#25A4AD] text-white px-6 py-3 rounded hover:color-primary-bg transition duration-300 shadow-md">
+                            Request Demo
+                        </a>
+                    </div>
+
+                    <div
+                        class="stagger-item hover-raise hover-shadow bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-full flex flex-col justify-between">
+                        <div>
+                            <p class="font-bold text-2xl mb-2">For Company</p>
+                            <h3 class="text-5xl font-bold mb-8">Custom</h3>
+                            <ul class="space-y-4 text-left text-sm text-gray-600">
+                                <li class="flex items-start"><span>Feedback Categorization</span></li>
+                                <li class="flex items-start"><span>Feedback Loop Notifications</span></li>
+                                <li class="flex items-start"><span>Essential Dev Tools Integrations</span></li>
+                            </ul>
+                        </div>
+                        <a href="#"
+                            class="mt-8 border border-[#25A4AD] text-[#25A4AD] px-6 py-3 rounded hover:bg-gray-50 transition duration-300 font-medium">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white" id="faq">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-light mb-4">
+                        Frequently Asked <span class="text-[#25A4AD] font-bold">Questions</span>
+                    </h2>
+                    <p class="text-[#555555] text-lg max-w-2xl mx-auto">
+                        Get answers to the most common questions about our web development and design services
+                    </p>
+                </div>
+
+                <!-- FAQ -->
+                <div class="space-y-4">
+                    <div class="faq-item stagger-item bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <button class="faq-button w-full text-left px-6 py-4 focus:outline-none" aria-expanded="false">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-medium pr-8">What services do you offer in web development?</h3>
+                                <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-4">
+                            <p class="text-[#555555]">
+                                We offer a comprehensive range of web development services including:
+                            </p>
+                            <ul class="list-disc list-inside mt-2 text-[#555555] space-y-1">
+                                <li>Custom website development</li>
+                                <li>E-commerce solutions</li>
+                                <li>Web application development</li>
+                                <li>CMS development and integration</li>
+                                <li>API development and integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item stagger-item bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <button class="faq-button w-full text-left px-6 py-4 focus:outline-none" aria-expanded="false">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-medium pr-8">How long does it take to complete a project?</h3>
+                                <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-4">
+                            <p class="text-[#555555]">
+                                Project timelines vary based on complexity and requirements. Typically:
+                            </p>
+                            <ul class="list-disc list-inside mt-2 text-[#555555] space-y-1">
+                                <li>Simple websites: 2-4 weeks</li>
+                                <li>Complex web applications: 2-4 months</li>
+                                <li>E-commerce sites: 1-3 months</li>
+                            </ul>
+                            <p class="mt-2 text-[#555555]">We'll provide a detailed timeline during the project scoping
+                                phase.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item stagger-item bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <button class="faq-button w-full text-left px-6 py-4 focus:outline-none" aria-expanded="false">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-medium pr-8">Do you provide ongoing support and maintenance?
+                                </h3>
+                                <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-4">
+                            <p class="text-[#555555]">
+                                Yes, we offer comprehensive support and maintenance services including:
+                            </p>
+                            <ul class="list-disc list-inside mt-2 text-[#555555] space-y-1">
+                                <li>24/7 technical support</li>
+                                <li>Regular security updates</li>
+                                <li>Performance optimization</li>
+                                <li>Content updates</li>
+                                <li>Backup and recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item stagger-item bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <button class="faq-button w-full text-left px-6 py-4 focus:outline-none" aria-expanded="false">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-medium pr-8">How much do you charge for your services?</h3>
+                                <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 pb-4">
+                            <p class="text-[#555555]">
+                                Our development process follows these key steps:
+                            </p>
+                            <ul class="list-disc list-inside mt-2 text-[#555555] space-y-1">
+                                <li>Requirements gathering and analysis</li>
+                                <li>Design and wireframing</li>
+                                <li>Development and testing</li>
+                                <li>Client review and feedback</li>
+                                <li>Launch and maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-900" id="contact">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white mb-20">
+                    People who are <br> ready took these courses!
+                </h2>
+                <a href="#"
+                    class="border border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white hover:text-gray-900 transition duration-300">
+                    Schedule demo
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-3xl font-extrabold text-white mb-2">Payme</h3>
+                    <p class="text-xs text-gray-400">
+                        CrecheworkstR2<br> All Rights Reserved.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-4">
+                        &copy; 2021 Payme. All rights reserved.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Overview</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Social Media</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="font-bold mb-4 text-white">Get in touch</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="text-gray-400">CrecheworksTR2.</li>
+                        <li class="text-gray-400">085-525MT</li>
+                        <li class="text-gray-400">Info@payme.net</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
